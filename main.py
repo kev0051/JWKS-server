@@ -75,7 +75,7 @@ def jwks():
     
 
 # /auth endpoint that returns an unexpired, signed JWT on a POST request
-# This will return an RSA256 Encryption of {"kid": "kidhere", "alg": "RSA256"}.{"username": "user", "password": "pass"}.key_pairs[kid]["private_key"]
+# This will return an RS256 Encryption of {"kid": "kidhere", "alg": "RS256"}.{"username": "user", "password": "pass"}.key_pairs[kid]["private_key"]
 # POST http://localhost:8080/auth
 @app.route('/auth', methods=['POST'])
 def auth():
